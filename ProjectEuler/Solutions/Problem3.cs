@@ -15,7 +15,7 @@ namespace Solutions
 
         public static void Solution()
         {
-            const long number = 600851475143;
+            long number = 600851475143;
             var factorsOfNumber = new List<long>();
             var primeFactors = new List<long>();
 
@@ -23,16 +23,23 @@ namespace Solutions
             for (long i = 1; i <= number; i++)
             {
                 if (number % i == 0)
+                {
+                    if (factorsOfNumber.Contains(i))
+                        break;
+
                     factorsOfNumber.Add(i);
+                    factorsOfNumber.Add(number / i);
+                }
+
             }
-            
+
 
             var factorsNumber = 0;
             foreach (var factor in factorsOfNumber)
             {
                 for (long i = 1; i <= factor; i++)
                 {
-                    if(factorsNumber > 2)
+                    if (factorsNumber > 2)
                         break;
 
 
