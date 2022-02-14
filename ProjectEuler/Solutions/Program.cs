@@ -6,7 +6,10 @@ namespace Solutions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("---------Problem 1 Answer---------");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Problem1.Solution();
+            Console.ResetColor();
         }
     }
 }
