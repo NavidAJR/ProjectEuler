@@ -40,6 +40,7 @@ namespace Solutions
             {
                 sumOfTheNumbersInTheRange += i;
             }
+
             squareOfTheSum = Math.Pow(sumOfTheNumbersInTheRange, 2);
 
 
