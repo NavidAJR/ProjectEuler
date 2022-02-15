@@ -29,6 +29,12 @@ namespace Solutions
             Problem4.Solution();
             Console.ResetColor();
             Console.WriteLine();
+
+            Console.WriteLine("---------Problem 5 Answer---------");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Problem5.Solution();
+            Console.ResetColor();
+            Console.WriteLine();
         }
     }
 }
