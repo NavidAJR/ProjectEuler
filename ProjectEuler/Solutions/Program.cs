@@ -6,70 +6,42 @@ namespace Solutions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("---------Problem 1 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem1.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(1, Problem1.Solution);
 
-            Console.WriteLine("---------Problem 2 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem2.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(2, Problem2.Solution);
 
-            Console.WriteLine("---------Problem 3 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem3.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(3, Problem3.Solution);
 
-            Console.WriteLine("---------Problem 4 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem4.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(4, Problem4.Solution);
 
-            Console.WriteLine("---------Problem 5 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem5.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(5, Problem5.Solution);
 
-            Console.WriteLine("---------Problem 6 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem6.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(6, Problem6.Solution);
 
-            Console.WriteLine("---------Problem 7 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem7.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(7, Problem7.Solution);
 
-            Console.WriteLine("---------Problem 8 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem8.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(8, Problem8.Solution);
 
-            Console.WriteLine("---------Problem 9 Answer---------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Problem9.Solution();
-            Console.ResetColor();
-            Console.WriteLine();
+            ShowAnswer(9, Problem9.Solution);
 
-            //Console.WriteLine("---------Problem 10 Answer---------");
-            //Console.ForegroundColor = ConsoleColor.Green;
-            //Problem10.Solution();
-            //Console.ResetColor();
-            //Console.WriteLine();
+            ShowAnswer(10, Problem10.Solution);
 
-            Console.WriteLine("---------Problem 11 Answer---------");
+            ShowAnswer(11, Problem11.Solution);
+        }
+
+
+        static void ShowAnswer(int problemNumber, Action solution)
+        {
+            Console.WriteLine($"---------Problem {problemNumber} Answer---------");
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write("Answer is : ");
+
             Console.ForegroundColor = ConsoleColor.Green;
-            Problem11.Solution();
+            solution();
+
             Console.ResetColor();
+
             Console.WriteLine();
         }
     }
