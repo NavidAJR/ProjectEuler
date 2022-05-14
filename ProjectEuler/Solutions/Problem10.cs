@@ -44,7 +44,7 @@ namespace Solutions
             }
 
 
-            Console.WriteLine(primeNumbers.Sum());
+            Console.WriteLine(primeNumbers.Sum().ToString("##,###"));
         }
     }
 }

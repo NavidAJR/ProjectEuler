@@ -45,7 +45,7 @@ namespace Solutions
             }
 
 
-            Console.WriteLine(primeNumbers[10000]);
+            Console.WriteLine(primeNumbers[10000].ToString("##,###"));
         }
     }
 }

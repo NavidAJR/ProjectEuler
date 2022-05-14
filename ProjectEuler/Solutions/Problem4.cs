@@ -47,7 +47,7 @@ namespace Solutions
             }
 
 
-            Console.WriteLine(palindromes.Max());
+            Console.WriteLine(palindromes.Max().ToString("##,###"));
         }
     }
 }

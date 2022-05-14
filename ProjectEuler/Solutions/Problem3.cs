@@ -56,7 +56,7 @@ namespace Solutions
             }
 
 
-            Console.WriteLine(primeFactors.Max());
+            Console.WriteLine(primeFactors.Max().ToString("##,###"));
 
         }
     }

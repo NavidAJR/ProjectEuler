@@ -44,7 +44,7 @@ namespace Solutions
             squareOfTheSum = Math.Pow(sumOfTheNumbersInTheRange, 2);
 
 
-            Console.WriteLine(squareOfTheSum - sumOfTheSquares);
+            Console.WriteLine((squareOfTheSum - sumOfTheSquares).ToString("##,###"));
         }
     }
 }

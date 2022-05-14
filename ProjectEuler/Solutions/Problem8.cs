@@ -93,7 +93,7 @@ namespace Solutions
             }
 
 
-            Console.WriteLine(results.Max());
+            Console.WriteLine(results.Max().ToString("##,###"));
         }
     }
 }

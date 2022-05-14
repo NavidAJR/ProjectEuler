@@ -37,7 +37,7 @@ namespace Solutions
             }
 
 
-            Console.WriteLine(evens.Sum());
+            Console.WriteLine(evens.Sum().ToString("##,###"));
         }
     }
 }

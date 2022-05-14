@@ -23,7 +23,7 @@ namespace Solutions
                     multiples.Add(i);
             }
 
-            Console.WriteLine(multiples.Sum());
+            Console.WriteLine(multiples.Sum().ToString("##,###"));
         }
     }
 }

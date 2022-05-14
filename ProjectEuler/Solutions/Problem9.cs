@@ -30,7 +30,7 @@ namespace Solutions
                         if (a + b + c == 1000 && Math.Pow(a, 2) + Math.Pow(b, 2) == Math.Pow(c, 2))
                         {
                             isFound = true;
-                            Console.WriteLine(a * b * c);
+                            Console.WriteLine((a * b * c).ToString("##,###"));
                             break;
                         }
                     }

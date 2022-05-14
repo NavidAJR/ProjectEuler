@@ -115,7 +115,7 @@ namespace Solutions
             }
 
 
-            Console.Write(paterns.Count());
+            Console.Write(paterns.Count().ToString("##,###"));
 
         }
     }

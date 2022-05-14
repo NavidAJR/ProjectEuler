@@ -38,7 +38,14 @@ namespace Solutions
             Console.Write("Answer is : ");
 
             Console.ForegroundColor = ConsoleColor.Green;
+            var start = DateTime.Now;
             solution();
+            var duration = DateTime.Now - start;
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write("Duration: ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(duration.Minutes + "m " + duration.Seconds + "s " + duration.Milliseconds.ToString("D5") + "ms");
 
             Console.ResetColor();
 

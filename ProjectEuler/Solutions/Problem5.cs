@@ -32,7 +32,7 @@ namespace Solutions
 
                 if (succeed == divideRange)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i.ToString("##,###"));
                     break;
                 }
                     
